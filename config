@@ -1,0 +1,7 @@
+IMG_NAME="smartmeter_demo_rpi_image"
+LOCALE_DEFAULT="en_US.UTF-8"
+KEYBOARD_KEYMAP=""
+KEYBOARD_LAYOUT="Switzerland"
+TIMEZONE_DEFAULT="Europe/Zurich"
+ENABLE_SSH=1
+STAGE_LIST="stage0 stage1 stage2"
