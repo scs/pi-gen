@@ -1,0 +1,11 @@
+# config file version
+apiVersion: 1
+
+providers:
+- name: 'default'
+  orgId: 1
+  folder: 'smartmeter'
+  type: file
+  allowUiUpdates: true
+  options:
+    path: /var/lib/grafana/dashboards

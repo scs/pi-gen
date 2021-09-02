@@ -1,0 +1,12 @@
+[Unit]
+Description=Create smartmeter influx DB with retention policy
+Requires=influxdb.service
+After=influxdb.service
+Before=telegraf.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/influx -execute 'CREATE DATABASE smartmeter WITH DURATION 7d REPLICATION 1 NAME oneweek'
+
+[Install]
+WantedBy=multi-user.target
