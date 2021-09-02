@@ -1,1 +1,2 @@
 mosquitto influxdb telegraf grafana 
+/tmp/python3-smartmeter-datacollector.deb
