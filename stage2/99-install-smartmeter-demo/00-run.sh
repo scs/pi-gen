@@ -14,7 +14,12 @@ on_chroot << EOF
 apt-get update
 EOF
 
-# Setup Smart Meter Data Collector
-# TODO: mc download data collector Debian package
-install -m 644 files/python3-smartmeter-datacollector_0.4.1-1_all.deb "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector.deb"
-install -m 644 files/python3-smartmeter-datacollector-configurator_0.2.2-1_all.deb "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector-configurator.deb"
+# Download Smart Meter Data Collector
+wget \
+    -O "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector.deb" \
+    "https://github.com/scs/smartmeter-datacollector/releases/download/v0.5.0/python3-smartmeter-datacollector_0.5.0-1_armhf.deb"
+
+# Download Smart Meter Data Collector Configurator
+wget \
+    -O "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector-configurator.deb" \
+    "https://github.com/scs/smartmeter-datacollector-configurator/releases/download/v0.3.0/python3-smartmeter-datacollector-configurator_0.3.0-1_armhf.deb"
