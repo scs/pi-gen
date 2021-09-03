@@ -16,4 +16,5 @@ EOF
 
 # Setup Smart Meter Data Collector
 # TODO: mc download data collector Debian package
-install -m 644 files/python3-smartmeter-datacollector_0.4.1-1_all_mod.deb "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector.deb"
+install -m 644 files/python3-smartmeter-datacollector_0.4.1-1_all.deb "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector.deb"
+install -m 644 files/python3-smartmeter-datacollector-configurator_0.2.2-1_all.deb "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector-configurator.deb"
