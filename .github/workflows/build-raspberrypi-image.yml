@@ -1,0 +1,29 @@
+name: Build a Raspberry Pi OS image
+
+on:
+  push:
+    branches:
+      - 'smartmeter-datacollector**'
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-raspberrypi-image:
+    runs-on: ubuntu-latest
+
+    name: Build a Raspberry Pi OS image
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build the Raspberry Pi OS image
+        run: ./build-docker.sh
+      
+      - name: Archive the Raspberry Pi OS image
+        uses: actions/upload-artifact@v2
+        with:
+          name: raspberrypi-os-image
+          path: deploy/*.zip
