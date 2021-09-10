@@ -17,9 +17,9 @@ EOF
 # Download Smart Meter Data Collector
 wget \
     -O "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector.deb" \
-    "https://github.com/scs/smartmeter-datacollector/releases/download/v0.5.0/python3-smartmeter-datacollector_0.5.0-1_armhf.deb"
+    "https://github.com/scs/smartmeter-datacollector/releases/download/v0.6.0/python3-smartmeter-datacollector_0.6.0-1_armhf.deb"
 
 # Download Smart Meter Data Collector Configurator
 wget \
     -O "${ROOTFS_DIR}/tmp/python3-smartmeter-datacollector-configurator.deb" \
-    "https://github.com/scs/smartmeter-datacollector-configurator/releases/download/v0.3.0/python3-smartmeter-datacollector-configurator_0.3.0-1_armhf.deb"
+    "https://github.com/scs/smartmeter-datacollector-configurator/releases/download/v0.4.0/python3-smartmeter-datacollector-configurator_0.4.0-1_armhf.deb"
