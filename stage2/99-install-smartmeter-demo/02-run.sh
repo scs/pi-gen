@@ -18,6 +18,7 @@ EOF
 # Setup Grafana
 install -d "${ROOTFS_DIR}/var/lib/grafana/dashboards"
 install -m 644 files/grafana/smartmeter_demo_dashboard.json "${ROOTFS_DIR}/var/lib/grafana/dashboards"
+install -m 644 files/grafana/schema_overview_dashboard.json "${ROOTFS_DIR}/var/lib/grafana/dashboards"
 install -m 644 files/grafana/datasources.yaml "${ROOTFS_DIR}/etc/grafana/provisioning/datasources/"
 install -m 644 files/grafana/dashboards.yaml "${ROOTFS_DIR}/etc/grafana/provisioning/dashboards/"
 

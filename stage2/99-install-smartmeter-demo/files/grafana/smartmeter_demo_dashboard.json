@@ -5,7 +5,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "8.1.2"
+      "version": "8.1.3"
     },
     {
       "type": "panel",
@@ -251,7 +251,7 @@
         "text": {},
         "textMode": "value_and_name"
       },
-      "pluginVersion": "8.1.2",
+      "pluginVersion": "8.1.3",
       "targets": [
         {
           "alias": "Active Energy Import",
@@ -379,7 +379,7 @@
         "text": {},
         "textMode": "value_and_name"
       },
-      "pluginVersion": "8.1.2",
+      "pluginVersion": "8.1.3",
       "targets": [
         {
           "alias": "Reactive Energy Q1",
@@ -669,7 +669,7 @@
           "groupBy": [
             {
               "params": [
-                "1m"
+                "30s"
               ],
               "type": "time"
             },
@@ -829,7 +829,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "5s",
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
@@ -837,12 +837,12 @@
     "list": []
   },
   "time": {
-    "from": "2021-07-22T13:00:58.547Z",
-    "to": "2021-07-22T13:23:29.268Z"
+    "from": "now-7d",
+    "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Smartmeter Demo",
   "uid": "eNWwp2iRz",
-  "version": 1
+  "version": 2
 }
