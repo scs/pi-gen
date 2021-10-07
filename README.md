@@ -2,6 +2,20 @@
 
 Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
 
+## Smartmeter Data Collector Demo Image
+
+Using this branch of the repository an Raspberry Pi image up to stage 2 (headless system) including the Smart Meter Data Collector demonstration is built.
+
+The following additions are installed:
+
+* Smart Meter Data Collector
+* Smart Meter Data Collector Configurator
+* Mosquitto: MQTT broker
+* InfluxDB: time series database
+* Telegraf: utility to subscribe to MQTT and forward data to InfluxDB
+* Grafana: visualization of the data
+
+More about the demo can be found in the [Wiki documentation](https://github.com/scs/smartmeter-datacollector/wiki/Demo-(Raspberry-Pi-Image)).
 
 ## Dependencies
 
