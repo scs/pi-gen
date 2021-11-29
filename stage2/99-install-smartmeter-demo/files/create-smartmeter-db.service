@@ -6,7 +6,7 @@ Before=telegraf.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/influx -execute 'CREATE DATABASE smartmeter WITH DURATION 7d REPLICATION 1 NAME oneweek'
+ExecStart=/usr/bin/influx -execute 'CREATE DATABASE smartmeter WITH DURATION 31d REPLICATION 1 NAME onemonth'
 
 [Install]
 WantedBy=multi-user.target
