@@ -18,6 +18,10 @@ jobs:
     name: Build a Raspberry Pi OS image
     steps:
       - uses: actions/checkout@v3
+      - name: Prepare build environment
+        run: |
+          sudo apt update
+          sudo apt-get -y install qemu-user-static
 
       - name: Build the Raspberry Pi OS image
         run: ./build-docker.sh
