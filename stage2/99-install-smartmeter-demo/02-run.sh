@@ -17,8 +17,11 @@ EOF
 
 # Setup Grafana
 install -d "${ROOTFS_DIR}/var/lib/grafana/dashboards"
-install -m 644 files/grafana/smartmeter_demo_dashboard.json "${ROOTFS_DIR}/var/lib/grafana/dashboards"
-install -m 644 files/grafana/schema_overview_dashboard.json "${ROOTFS_DIR}/var/lib/grafana/dashboards"
+install -m 644 files/grafana/ISKRA_AM550.json "${ROOTFS_DIR}/var/lib/grafana/dashboards/"
+install -m 644 files/grafana/Kamstrup_HAN_NVE.json "${ROOTFS_DIR}/var/lib/grafana/dashboards/"
+install -m 644 files/grafana/LG_E360.json "${ROOTFS_DIR}/var/lib/grafana/dashboards/"
+install -m 644 files/grafana/LG_E450.json "${ROOTFS_DIR}/var/lib/grafana/dashboards/"
+install -m 644 files/grafana/schema_overview.json "${ROOTFS_DIR}/var/lib/grafana/dashboards/"
 install -m 644 files/grafana/datasources.yaml "${ROOTFS_DIR}/etc/grafana/provisioning/datasources/"
 install -m 644 files/grafana/dashboards.yaml "${ROOTFS_DIR}/etc/grafana/provisioning/dashboards/"
 
