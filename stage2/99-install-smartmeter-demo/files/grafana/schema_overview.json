@@ -1,35 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_INFLUXDB",
-      "label": "InfluxDB",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "influxdb",
-      "pluginName": "InfluxDB"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "9.5.2"
-    },
-    {
-      "type": "datasource",
-      "id": "influxdb",
-      "name": "InfluxDB",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -55,14 +24,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 5,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB}"
+        "uid": "P951FEA4DE68E13C5"
       },
       "description": "",
       "fieldConfig": {
@@ -96,7 +65,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 14,
+        "h": 19,
         "w": 6,
         "x": 0,
         "y": 0
@@ -119,7 +88,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB}"
+            "uid": "P951FEA4DE68E13C5"
           },
           "query": "SHOW TAG VALUES WITH KEY = \"topic\"",
           "rawQuery": true,
@@ -147,7 +116,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB}"
+        "uid": "P951FEA4DE68E13C5"
       },
       "description": "",
       "fieldConfig": {
@@ -181,8 +150,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 14,
-        "w": 4,
+        "h": 19,
+        "w": 3,
         "x": 6,
         "y": 0
       },
@@ -204,7 +173,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB}"
+            "uid": "P951FEA4DE68E13C5"
           },
           "query": "SHOW TAG VALUES WITH KEY = \"type\"",
           "rawQuery": true,
@@ -232,7 +201,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB}"
+        "uid": "P951FEA4DE68E13C5"
       },
       "description": "",
       "fieldConfig": {
@@ -269,7 +238,7 @@
         "h": 6,
         "w": 6,
         "x": 0,
-        "y": 14
+        "y": 19
       },
       "id": 3,
       "options": {
@@ -289,7 +258,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB}"
+            "uid": "P951FEA4DE68E13C5"
           },
           "query": "SHOW TAG VALUES WITH KEY = \"source\"",
           "rawQuery": true,
@@ -330,6 +299,6 @@
   "timezone": "",
   "title": "Schema Overview",
   "uid": "9IKsgKzgk",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }

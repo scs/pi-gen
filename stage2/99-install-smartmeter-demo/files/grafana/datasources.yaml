@@ -8,6 +8,8 @@ datasources:
   - name: InfluxDB
     # <string, required> datasource type. Required
     type: influxdb
+    # <string> Sets a custom UID to reference this
+    uid: P951FEA4DE68E13C5
     # <string> url
     url: http://127.0.0.1:8086
     # <string> database name, if used
