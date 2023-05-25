@@ -25,7 +25,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 6,
+  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -846,7 +846,7 @@
       "pluginVersion": "8.2.2",
       "targets": [
         {
-          "alias": "Hochtarif",
+          "alias": "Hochtarif ($tag_source)",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -857,6 +857,12 @@
                 "1d"
               ],
               "type": "time"
+            },
+            {
+              "params": [
+                "source::tag"
+              ],
+              "type": "tag"
             },
             {
               "params": [
@@ -903,7 +909,7 @@
           ]
         },
         {
-          "alias": "Niedertarif",
+          "alias": "Niedertarif ($tag_source)",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -914,6 +920,12 @@
                 "1d"
               ],
               "type": "time"
+            },
+            {
+              "params": [
+                "source::tag"
+              ],
+              "type": "tag"
             },
             {
               "params": [
@@ -1009,7 +1021,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           },
@@ -1039,7 +1052,7 @@
       "pluginVersion": "8.2.2",
       "targets": [
         {
-          "alias": "Hochtarif",
+          "alias": "Hochtarif ($tag_source)",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -1050,6 +1063,12 @@
                 "1d"
               ],
               "type": "time"
+            },
+            {
+              "params": [
+                "source::tag"
+              ],
+              "type": "tag"
             },
             {
               "params": [
@@ -1096,7 +1115,7 @@
           ]
         },
         {
-          "alias": "Niedertarif",
+          "alias": "Niedertarif ($tag_source)",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -1107,6 +1126,12 @@
                 "1d"
               ],
               "type": "time"
+            },
+            {
+              "params": [
+                "source::tag"
+              ],
+              "type": "tag"
             },
             {
               "params": [
@@ -1173,6 +1198,6 @@
   "timezone": "",
   "title": "ISKRA AM550",
   "uid": "fc0fc73f-1103-4868-8d1a-16f14d768162",
-  "version": 8,
+  "version": 2,
   "weekStart": ""
 }
